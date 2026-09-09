@@ -1,0 +1,17 @@
+cd tu-carpeta
+git init
+git remote add origin https://github.com/fcochaux/2026_insumos_twine.git
+git add .
+git commit -m "Adición de archivos para el proyecto"
+git branch -M main
+git push -u origin main
+
+/* Con reinicio */
+
+Remove-Item -Recurse -Force .git
+git init
+git remote add origin https://github.com/fcochaux/2026_insumos_twine.git
+git add .
+git commit -m "Adición de archivos para el proyecto"
+git branch -M main
+git push -f origin main
